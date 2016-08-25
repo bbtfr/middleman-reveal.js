@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Middleman Reveal.js" %></title>
 
     <link rel="stylesheet" href="/reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="/reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="/reveal.js/css/theme/<%= current_page.data.theme || "black" %>.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="/reveal.js/lib/css/zenburn.css">

@@ -13,6 +13,18 @@ git submodule init
 git submodule update
 ```
 
-Then you can edit `source/index.html.erb` to create your awesome sliders.
+Then you can edit `source/index.html.erb` to create your awesome sliders, and you can also see `http://localhost:4567/reveal.js/demo.html` as a demo.
 
-And you can also see `http://localhost:4567/reveal.js/demo.html` as a demo.
+Available Frontmatters
+---
+
+```
+---
+title: "Welcome to Middleman Reveal.js" # Page title
+theme: "night" # default: black
+---
+
+<section>Slide 1</section>
+<section>Slide 2</section>
+
+```
