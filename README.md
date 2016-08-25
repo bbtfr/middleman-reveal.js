@@ -10,6 +10,9 @@ Usage
 git clone git@github.com:bbtfr/middleman-reveal.js.git MY_PROJECT_FOLDER
 cd MY_PROJECT_FOLDER
 git submodule init
+git submodule update
 ```
 
 Then you can edit `source/index.html.erb` to create your awesome sliders.
+
+And you can also see `http://localhost:4567/reveal.js/demo.html` as a demo.
