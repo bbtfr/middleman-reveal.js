@@ -9,10 +9,10 @@
     <title><%= current_page.data.title || "Middleman Reveal.js" %></title>
 
     <link rel="stylesheet" href="reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="reveal.js/css/theme/<%= current_page.data.theme || "black" %>.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/<%= current_page.data.theme || 'black' %>.css">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="reveal.js/lib/css/<%= current_page.data.syntax_theme || 'zenburn' %>.css">
 
     <!-- Printing and PDF exports -->
     <script>
