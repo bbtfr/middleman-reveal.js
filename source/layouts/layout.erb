@@ -8,18 +8,18 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman Reveal.js" %></title>
 
-    <link rel="stylesheet" href="reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="reveal.js/css/theme/<%= current_page.data.theme || 'black' %>.css">
+    <link rel="stylesheet" href="<%= config[:revealjs_path] %>/css/reveal.css">
+    <link rel="stylesheet" href="<%= config[:revealjs_path] %>/css/theme/<%= current_page.data.theme || 'black' %>.css">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="reveal.js/lib/css/<%= current_page.data.syntax_theme || 'zenburn' %>.css">
+    <link rel="stylesheet" href="<%= config[:revealjs_path] %>/lib/css/<%= current_page.data.syntax_theme || 'zenburn' %>.css">
 
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '<%= config[:revealjs_path] %>/css/print/pdf.css' : '<%= config[:revealjs_path] %>/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
@@ -32,8 +32,8 @@
       </div>
     </div>
 
-    <script src="reveal.js/lib/js/head.min.js"></script>
-    <script src="reveal.js/js/reveal.js"></script>
+    <script src="<%= config[:revealjs_path] %>/lib/js/head.min.js"></script>
+    <script src="<%= config[:revealjs_path] %>/js/reveal.js"></script>
     <%= javascript_include_tag :application, relative: true %>
   </body>
 </html>

@@ -2,6 +2,10 @@
 # Page options, layouts, aliases and proxies
 ###
 
+# Use local / remote Reveal.js
+# set :revealjs_path, './reveal.js'
+set :revealjs_path, 'http://lab.hakim.se/reveal-js'
+
 # Per-page layout changes:
 #
 # With no layout
@@ -41,4 +45,6 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
+  ignore 'reveal.js/*' unless config[:revealjs_path] == './reveal.js'
 end
